@@ -1,0 +1,540 @@
+[2024-06-20 11:50:00,450][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=5, round_timeout=None)
+[2024-06-20 11:50:03,477][flwr][INFO] - Flower VCE: Ray initialized with resources: {'memory': 3118212711.0, 'node:__internal_head__': 1.0, 'node:127.0.0.1': 1.0, 'CPU': 8.0, 'object_store_memory': 1559106355.0}
+[2024-06-20 11:50:03,478][flwr][INFO] - Initializing global parameters
+[2024-06-20 11:50:03,478][flwr][INFO] - Requesting initial parameters from one random client
+[2024-06-20 11:50:04,160][flwr][INFO] - Received initial parameters from one random client
+[2024-06-20 11:50:04,160][flwr][INFO] - Evaluating initial parameters
+[2024-06-20 11:50:04,804][flwr][INFO] - initial parameters (loss, other metrics): 181.9360101222992, {'accuracy': 0.0823}
+[2024-06-20 11:50:04,804][flwr][INFO] - FL starting
+[2024-06-20 11:50:04,804][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+[2024-06-20 11:50:05,029][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,070][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,115][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,154][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,866][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11347, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,951][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11343, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,952][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11348, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,964][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:05,992][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:06,042][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11344, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:06,042][flwr][DEBUG] - fit_round 1 received 0 results and 10 failures
+[2024-06-20 11:50:06,717][flwr][INFO] - fit progress: (1, 181.9360101222992, {'accuracy': 0.0823}, 1.9129221250000015)
+[2024-06-20 11:50:06,718][flwr][DEBUG] - evaluate_round 1: strategy sampled 25 clients (out of 100)
+[2024-06-20 11:50:21,346][flwr][DEBUG] - evaluate_round 1 received 25 results and 0 failures
+[2024-06-20 11:50:21,347][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-06-20 11:50:21,347][flwr][DEBUG] - fit_round 2: strategy sampled 10 clients (out of 100)
+[2024-06-20 11:50:21,527][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,585][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,592][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11346, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,592][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11343, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,593][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11348, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,594][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,614][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,622][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,644][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,657][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:21,657][flwr][DEBUG] - fit_round 2 received 0 results and 10 failures
+[2024-06-20 11:50:22,332][flwr][INFO] - fit progress: (2, 181.9360101222992, {'accuracy': 0.0823}, 17.528359375)
+[2024-06-20 11:50:22,332][flwr][DEBUG] - evaluate_round 2: strategy sampled 25 clients (out of 100)
+[2024-06-20 11:50:35,682][flwr][DEBUG] - evaluate_round 2 received 25 results and 0 failures
+[2024-06-20 11:50:35,683][flwr][DEBUG] - fit_round 3: strategy sampled 10 clients (out of 100)
+[2024-06-20 11:50:35,907][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,937][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11347, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,947][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11344, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,950][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11343, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,956][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11348, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,963][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,969][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,972][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11347, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:35,995][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11347, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:36,016][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11347, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:36,016][flwr][DEBUG] - fit_round 3 received 0 results and 10 failures
+[2024-06-20 11:50:36,689][flwr][INFO] - fit progress: (3, 181.9360101222992, {'accuracy': 0.0823}, 31.885704250000003)
+[2024-06-20 11:50:36,689][flwr][DEBUG] - evaluate_round 3: strategy sampled 25 clients (out of 100)
+[2024-06-20 11:50:50,532][flwr][DEBUG] - evaluate_round 3 received 25 results and 0 failures
+[2024-06-20 11:50:50,533][flwr][DEBUG] - fit_round 4: strategy sampled 10 clients (out of 100)
+[2024-06-20 11:50:50,734][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11346, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:50,735][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11343, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:50,735][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:50,743][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:50,782][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:50,993][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:51,084][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:51,162][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:51,164][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:51,164][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11343, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:50:51,187][flwr][DEBUG] - fit_round 4 received 0 results and 10 failures
+[2024-06-20 11:50:51,816][flwr][INFO] - fit progress: (4, 181.9360101222992, {'accuracy': 0.0823}, 47.012936708)
+[2024-06-20 11:50:51,816][flwr][DEBUG] - evaluate_round 4: strategy sampled 25 clients (out of 100)
+[2024-06-20 11:51:04,188][flwr][DEBUG] - evaluate_round 4 received 25 results and 0 failures
+[2024-06-20 11:51:04,189][flwr][DEBUG] - fit_round 5: strategy sampled 10 clients (out of 100)
+[2024-06-20 11:51:04,368][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,373][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11348, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,414][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11342, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,420][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11348, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,431][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11344, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,432][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11347, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,435][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11341, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,439][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11343, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,439][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11345, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,452][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=11348, ip=127.0.0.1)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/Users/saisatyajonnalagadda/miniconda3/envs/flwr_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/Users/saisatyajonnalagadda/current_projects/mitacs_FL/client.py", line 46, in fit
+    train(self.model, self.trainloader, optimizer, criterion, epochs, device=self.device)
+TypeError: train() got multiple values for argument 'device'
+[2024-06-20 11:51:04,452][flwr][DEBUG] - fit_round 5 received 0 results and 10 failures
+[2024-06-20 11:51:05,132][flwr][INFO] - fit progress: (5, 181.9360101222992, {'accuracy': 0.0823}, 60.329259332999996)
+[2024-06-20 11:51:05,132][flwr][DEBUG] - evaluate_round 5: strategy sampled 25 clients (out of 100)
+[2024-06-20 11:51:17,019][flwr][DEBUG] - evaluate_round 5 received 25 results and 0 failures
+[2024-06-20 11:51:17,020][flwr][INFO] - FL finished in 72.217701708
+[2024-06-20 11:51:17,021][flwr][INFO] - app_fit: losses_distributed [(1, 6.905373020172119), (2, 6.907953128814698), (3, 6.909812259674072), (4, 6.90997612953186), (5, 6.902833662033081)]
+[2024-06-20 11:51:17,021][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-06-20 11:51:17,021][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-06-20 11:51:17,021][flwr][INFO] - app_fit: losses_centralized [(0, 181.9360101222992), (1, 181.9360101222992), (2, 181.9360101222992), (3, 181.9360101222992), (4, 181.9360101222992), (5, 181.9360101222992)]
+[2024-06-20 11:51:17,021][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.0823), (1, 0.0823), (2, 0.0823), (3, 0.0823), (4, 0.0823), (5, 0.0823)]}
